@@ -10,13 +10,13 @@ use ieee.numeric_std.all;
 
 -- Libraries
 
-entity multiplicador_booth is
+entity booth_multiplier_sim is
     generic(
         N           : integer := 4
         );
 end entity;
 
-architecture main of multiplicador_booth is
+architecture main of booth_multiplier_sim is
 
     signal IN_WEB           : std_logic_vector((N * 2 - 1) downto 0);
     signal CLOCK_50         : std_logic := '0';
